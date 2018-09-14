@@ -18,26 +18,34 @@
 </head>
 
 <body>
-   <h2>Is Even</h2>
+    <h2>Is Even</h2>
     <?php 
-    $numbersArray[1] = rand(); 
-    $numbersArray[2] = rand();
-    $numbersArray[3] = rand();
-    $numbersArray[4] = rand();
-    $numbersArray[5] = rand();
-    $numbersArray[6] = rand();
-    $numbersArray[7] = rand();
-    $numbersArray[8] = rand();
-    $numbersArray[9] = rand();
-    $numbersArray[10] = rand();
+    //Created empty array to contain the array[] blocks
+    $numbersArray = array();
+    //Array elements to generate ten random numbers from 0 to 100
+    $numbersArray[] = rand(0, 100); 
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
+    $numbersArray[] = rand(0, 100);
     
-    echo print_r($numbersArray);
-    
-    //$evenVar = ($numbersArray % 2 == 0) ? "is an even number" : "is an odd number";
-    //$even = ($num % 2 == 0);
-    //$odd = ($num % 2 != 0);
-
-  
+ //Created a for loop to display if the random nimber is odd or even  
+ for ($i = 0; $i < count($numbersArray); $i++) {
+     //Used the modulus 2 because even numbers are divisible by 2
+     if (($numbersArray[$i] % 2) === 0) {
+         //Prints if even number
+         echo "<p>$numbersArray[$i] is an even number. </p>";
+     }
+     else {
+         //Prints if odd number
+         echo "<p>$numbersArray[$i] is an odd number</p>";
+     }
+ }
     ?>
 </body>
 
