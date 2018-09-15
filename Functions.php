@@ -6,7 +6,7 @@
     <!--   
          Exercise 02_01_01
          Author: Tabitha SIclovan
-         Date: September 11, 2018
+         Date: September 13, 2018
         
          Functions.php
            
