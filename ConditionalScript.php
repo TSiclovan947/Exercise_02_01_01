@@ -22,8 +22,16 @@
     <?php 
     $intVariable = 75;
     $result = "";
-    ($intVariable > 100) ? $result = '$intVariable is greater than 100' : $result = '$intVariable is less than or equal to 100';
-    echo '<h3>$result: ' . "$result</h3>";
+        //($intVariable > 100) ? $result = '$intVariable is greater than 100' : $result = '$intVariable is less than or equal to 100';
+        //echo '<h3>$result: ' . "$result</h3>";
+    
+    //If statement to display is the variable is greater than 100
+    if ($intVariable > 100) {
+        echo '$intVariable is greater than 100';
+    }
+    else { //else displays if variable is less than or equal to 100
+       echo '$intVariable is less than or equal to 100';
+    }
     ?>
 </body>
 
