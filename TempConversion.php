@@ -25,6 +25,7 @@
     //While loop to convert fahrenheit temperature to celcius
         while ($fahrenTemp <= 100) {
            //Conversion math
+            //.556 rounded version of 5/9
 	       $celsTemp = ($fahrenTemp - 32) * .556;
            //Displays the text and temperature
 	       echo $fahrenTemp." Fahrenheit is equal to ".$celsTemp." Celsius<br/>"; 

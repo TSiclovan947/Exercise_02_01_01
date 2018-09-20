@@ -20,7 +20,8 @@
 <body>
    <h2>Conditional Script</h2>
     <?php 
-    $intVariable = 75;
+    //$intVariable = 75;
+    $intVariable = rand(0, 1000);
     $result = "";
         //($intVariable > 100) ? $result = '$intVariable is greater than 100' : $result = '$intVariable is less than or equal to 100';
         //echo '<h3>$result: ' . "$result</h3>";

@@ -30,8 +30,24 @@
     	if ($i % 2 !== 0) {
         $odd .= $i . ",";
     	}
-	}   
+	}  
 	echo $odd;
+    
+    ?>
+    <h2>Even Numbers</h2>
+    <?php
+    //Variable equal to the end product of 100
+    $finish = 100;
+    //Variable that displays the following text
+	$even = "Even Numbers Are : ";
+    //For loop to display even numbers from 1 through 100
+	for($i = 1; $i <= $finish; $i++) {
+        //Modulus because even numbers divide by two with no remainder
+    	if ($i % 2 === 0) {
+        $even .= $i . ",";
+    	}
+	}  
+	echo $even;
     ?>
 </body>
 
